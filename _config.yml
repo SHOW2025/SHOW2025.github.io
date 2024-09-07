@@ -1,10 +1,72 @@
-includes_dir: .
+title: Conference 2020
+preposition: ''
+description: >-
+  Conference of a random organization on January 1st in Zurich, Switzerland
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://example.com" # the base hostname & protocol for your site, e.g. https://example.com
 
-# Compression parameters for the compress.html layout from https://jch.penibelst.de
-compress_html:
-  clippings: all
-  startings: [head, body]
-  endings: all
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
 
-plugins:
-  - jekyll-redirect-from
+# Exclude from processing
+exclude:
+  - .github/
+  - venv/
+  - README.md
+  - LICENSE.md
+  - REDISTRIBUTED.md
+  - screenshot.png
+  - jekyll-theme-conference.gemspec
+  - purgecss.config.js
+  - _config.example.yml
+
+# Collections and their defaults
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:title/
+  speakers:
+    output: true
+    permalink: /:collection/:title/
+  rooms:
+    output: true
+    permalink: /:collection/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: rooms
+    values:
+      layout: room
+
+# Theme default values
+conference:
+  lang: en
+  show_errors: True
+
+  link_preview:
+    disable: false
+
+  speakers:
+    show_firstname: true
+
+  location:
+    url: '/location'
+    map: true
+
+  program:
+    url: '/program'
+    time_steps: 15
+    show_alltimes: true
