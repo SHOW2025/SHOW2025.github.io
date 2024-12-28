@@ -3,7 +3,8 @@
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/logo_trans.png" />
+    <link rel="shortcut icon" type="image/png" href="assets/logo_trans.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
@@ -17,85 +18,64 @@
         .navigation {
             background-color: #DFE7E9; /* Light background for the navigation */
             padding: 10px;
-            text-align: center; /* Center-align the navigation links */
-        }
-
-        .navigation td {
-            padding: 10px;
         }
 
         .navigation a {
             text-decoration: none;
             color: black; /* Default color for links */
-            padding: 15px 25px; /* Increased padding for more space around the links */
-            margin: 0 15px; /* Increased margin between links */
+            padding: 10px;
+            margin: 0 10px;
             display: inline-block;
             font-family: 'Trebuchet MS', sans-serif;
-            font-size: 20px; /* Larger text for better readability */
         }
 
         /* Hover effect for the links */
         .navigation a:hover {
-            color: #307D7E; /* Change color to blue on hover */
+            color: #307D7E; /* Blue color when hovered */
         }
 
-        /* Active link (current page) styling */
-        .navigation a.current {
-            font-weight: bold;
-            color: #307D7E; /* Bold and highlighted color for active link */
+        /* Styling for the schedule */
+        .schedule {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
         }
-body {
-    font-family: 'Trebuchet MS', sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-    font-size: 16px; /* Increase font size for the body */
-}
 
-h1, h2 {
-    color: #307D7E;
-}
+        .schedule h2 {
+            text-align: center;
+            color: #307D7E;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
 
-.day {
-    margin-bottom: 30px;
-}
+        .day {
+            margin-bottom: 20px;
+        }
 
-.schedule {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 18px; /* Increase font size for table content */
-}
+        .day h3 {
+            color: #307D7E;
+            font-size: 24px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
 
-.schedule th, .schedule td {
-    border: 1px solid #DFE7E9;
-    padding: 12px; /* Increase padding for better readability */
-    text-align: left;
-}
+        .session {
+            margin-left: 20px;
+            font-size: 18px;
+        }
 
-.schedule th {
-    background-color: #DFE7E9;
-    color: #333;
-}
-
-.schedule td {
-    background-color: #F9F9F9;
-}
-
-.time-slot {
-    font-weight: bold;
-    color: #205D5D;
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    text-align: center;
-    color: #666;
-}
-
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #666;
+        }
     </style>
 </head>
 
-<table class="navigation">
+<body>
+
+    <!-- Navigation -->
+    <table class="navigation">
         <tr>
             <td class="navigation">
                 <a class="current" title="Conference Home Page" href=".">Home</a>
@@ -116,142 +96,69 @@ footer {
                 <a title="Team page" href="team">The 2025 Team</a>
             </td>
         </tr>
-</table>
+    </table>
 
+    <!-- Conference Schedule -->
+    <div class="schedule">
+        <h2>Conference Schedule</h2>
 
-<body>
-    <header>
-        <h1>SHOW 2025 Conference Program</h1>
-        <p>Join us for two exciting days of talks and discussions about hermaphrodite evolution and biology.</p>
-    </header>
+        <!-- Day 1 Schedule -->
+        <div class="day">
+            <h3>Day 1: 7 May, 2025</h3>
+            <div class="session">
+                <strong>9:00 AM - 10:00 AM:</strong> Opening Remarks & Keynote Speaker: Dr. John Doe
+            </div>
+            <div class="session">
+                <strong>10:15 AM - 11:15 AM:</strong> Session 1: Population Genetics in Hermaphroditic Species
+            </div>
+            <div class="session">
+                <strong>11:30 AM - 12:30 PM:</strong> Session 2: Gamete Evolution and Mating Systems
+            </div>
+            <div class="session">
+                <strong>12:30 PM - 1:30 PM:</strong> Lunch Break
+            </div>
+            <div class="session">
+                <strong>1:30 PM - 3:00 PM:</strong> Session 3: Sexual Conflict and Hermaphroditism
+            </div>
+            <div class="session">
+                <strong>3:15 PM - 4:15 PM:</strong> Session 4: Experimental Evolution in Hermaphrodites
+            </div>
+            <div class="session">
+                <strong>4:30 PM - 5:00 PM:</strong> Closing Remarks
+            </div>
+        </div>
 
-    <main>
-        <!-- Day 1 -->
-        <section class="day">
-            <h2>Day 1: Wednesday, May 7, 2025</h2>
-            <table class="schedule">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Session</th>
-                        <th>Speaker/Presenter</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time-slot">9:00 AM - 9:30 AM</td>
-                        <td>Welcome and Opening Remarks</td>
-                        <td>Conference Chair</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">9:30 AM - 10:15 AM</td>
-                        <td>Keynote: Evolution of Simultaneous Hermaphroditism</td>
-                        <td>Dr. Jane Smith</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">10:15 AM - 10:30 AM</td>
-                        <td>Coffee Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">10:30 AM - 12:00 PM</td>
-                        <td>Session 1: Genetic Mechanisms</td>
-                        <td>Various Speakers</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">12:00 PM - 1:00 PM</td>
-                        <td>Lunch Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">1:00 PM - 2:30 PM</td>
-                        <td>Session 2: Sexual Conflict in Hermaphrodites</td>
-                        <td>Various Speakers</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">2:30 PM - 2:45 PM</td>
-                        <td>Afternoon Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">2:45 PM - 4:15 PM</td>
-                        <td>Session 3: Experimental Approaches</td>
-                        <td>Various Speakers</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">4:15 PM - 5:00 PM</td>
-                        <td>Panel Discussion</td>
-                        <td>Moderated by Dr. Emily Johnson</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Day 2 -->
-        <section class="day">
-            <h2>Day 2: Thursday, May 8, 2025</h2>
-            <table class="schedule">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Session</th>
-                        <th>Speaker/Presenter</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="time-slot">9:00 AM - 9:30 AM</td>
-                        <td>Recap of Day 1</td>
-                        <td>Conference Chair</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">9:30 AM - 10:15 AM</td>
-                        <td>Keynote: Mating Systems in Hermaphroditic Species</td>
-                        <td>Dr. Michael Lee</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">10:15 AM - 10:30 AM</td>
-                        <td>Coffee Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">10:30 AM - 12:00 PM</td>
-                        <td>Session 4: Gamete Evolution</td>
-                        <td>Various Speakers</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">12:00 PM - 1:00 PM</td>
-                        <td>Lunch Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">1:00 PM - 2:30 PM</td>
-                        <td>Session 5: Population Genetics</td>
-                        <td>Various Speakers</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">2:30 PM - 2:45 PM</td>
-                        <td>Afternoon Break</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">2:45 PM - 4:15 PM</td>
-                        <td>Session 6: Future Directions in Research</td>
-                        <td>Various Speakers</td>
-                    </tr>
-                    <tr>
-                        <td class="time-slot">4:15 PM - 5:00 PM</td>
-                        <td>Closing Remarks</td>
-                        <td>Conference Chair</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+        <!-- Day 2 Schedule -->
+        <div class="day">
+            <h3>Day 2: 8 May, 2025</h3>
+            <div class="session">
+                <strong>9:00 AM - 10:00 AM:</strong> Session 5: Gene Expression and Hermaphroditism
+            </div>
+            <div class="session">
+                <strong>10:15 AM - 11:15 AM:</strong> Session 6: Evolutionary Strategies in Simultaneous Hermaphrodites
+            </div>
+            <div class="session">
+                <strong>11:30 AM - 12:30 PM:</strong> Session 7: New Approaches in Mating Systems
+            </div>
+            <div class="session">
+                <strong>12:30 PM - 1:30 PM:</strong> Lunch Break
+            </div>
+            <div class="session">
+                <strong>1:30 PM - 3:00 PM:</strong> Session 8: Collaborative Research in Hermaphroditism
+            </div>
+            <div class="session">
+                <strong>3:15 PM - 4:15 PM:</strong> Round Table Discussion: Future Directions in Hermaphrodite Research
+            </div>
+            <div class="session">
+                <strong>4:30 PM - 5:00 PM:</strong> Closing Ceremony and Acknowledgements
+            </div>
+        </div>
+    </div>
 
     <footer>
         &copy; 2025 SHOW Organizers
     </footer>
+
 </body>
 
 </html>
