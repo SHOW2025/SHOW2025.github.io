@@ -1,335 +1,257 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
+    <link rel="shortcut icon" type="image/png" href="assets/logo_trans.png" />
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Program | Conference Template</title>
+    <title>Program | SHOW 2025</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling for the navigation table */
+        .navigation {
+            background-color: #DFE7E9; /* Light background for the navigation */
+            padding: 10px;
+            text-align: center; /* Center-align the navigation links */
+        }
+
+        .navigation td {
+            padding: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: black; /* Default color for links */
+            padding: 15px 25px; /* Increased padding for more space around the links */
+            margin: 0 15px; /* Increased margin between links */
+            display: inline-block;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 20px; /* Larger text for better readability */
+        }
+
+        /* Hover effect for the links */
+        .navigation a:hover {
+            color: #307D7E; /* Change color to blue on hover */
+        }
+
+        /* Active link (current page) styling */
+        .navigation a.current {
+            font-weight: bold;
+            color: #307D7E; /* Bold and highlighted color for active link */
+        }
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    font-size: 16px; /* Increase font size for the body */
+}
+
+h1, h2 {
+    color: #307D7E;
+}
+
+.day {
+    margin-bottom: 30px;
+}
+
+.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px; /* Increase font size for table content */
+}
+
+.schedule th, .schedule td {
+    border: 1px solid #DFE7E9;
+    padding: 12px; /* Increase padding for better readability */
+    text-align: left;
+}
+
+.schedule th {
+    background-color: #DFE7E9;
+    color: #333;
+}
+
+.schedule td {
+    background-color: #F9F9F9;
+}
+
+.time-slot {
+    font-weight: bold;
+    color: #205D5D;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #666;
+}
+
+    </style>
 </head>
 
-<body>
-
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
-        <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
-        </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
-        </div>
-    </div>
-
-    <table class="navigation">
+<table class="navigation">
         <tr>
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a class="current" title="Conference Home Page" href=".">Home</a>
             </td>
             <td class="navigation">
                 <a title="Register for the Conference" href="registration">Registration</a>
             </td>
             <td class="navigation">
-                <a class="current" title="Conference Program" href="program">Program</a> 
+                <a title="Conference Program" href="program">Program</a> 
             </td>
             <td class="navigation">
                 <a title="Directions to the Conference" href="directions">Directions</a>
             </td>
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Conference Flyer" href="flyer">Past SHOWs</a>
+            </td>
+            <td class="navigation">
+                <a title="Team page" href="team">The 2025 Team</a>
             </td>
         </tr>
-    </table>
+</table>
 
-    <h2>Conference Program</h2>
 
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                8:30am
-            </td>
-            <td class="title-special">
-                Registration and Coffee &amp; Tea!
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
-                Notice that the title is styled differently than the ones for talks.
-            </td>
-        </tr>
-    </table>
+<body>
+    <header>
+        <h1>SHOW 2025 Conference Program</h1>
+        <p>Join us for two exciting days of talks and discussions about hermaphrodite evolution and biology.</p>
+    </header>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:00am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
-            </td>
-        </tr>
-    </table>
+    <main>
+        <!-- Day 1 -->
+        <section class="day">
+            <h2>Day 1: Wednesday, May 7, 2025</h2>
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Speaker/Presenter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-slot">9:00 AM - 9:30 AM</td>
+                        <td>Welcome and Opening Remarks</td>
+                        <td>Conference Chair</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">9:30 AM - 10:15 AM</td>
+                        <td>Keynote: Evolution of Simultaneous Hermaphroditism</td>
+                        <td>Dr. Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">10:15 AM - 10:30 AM</td>
+                        <td>Coffee Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">10:30 AM - 12:00 PM</td>
+                        <td>Session 1: Genetic Mechanisms</td>
+                        <td>Various Speakers</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">12:00 PM - 1:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">1:00 PM - 2:30 PM</td>
+                        <td>Session 2: Sexual Conflict in Hermaphrodites</td>
+                        <td>Various Speakers</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">2:30 PM - 2:45 PM</td>
+                        <td>Afternoon Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">2:45 PM - 4:15 PM</td>
+                        <td>Session 3: Experimental Approaches</td>
+                        <td>Various Speakers</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">4:15 PM - 5:00 PM</td>
+                        <td>Panel Discussion</td>
+                        <td>Moderated by Dr. Emily Johnson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:25am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:50am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                10:15am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                10:40am
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                11:00am
-            </td>
-            <td class="title">
-                This is a Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                Noon
-            </td>
-            <td class="title-special">
-                Lunch
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:30pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:55pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                2:50pm
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                3:10pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                3:35pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                4:00pm
-            </td>
-            <td class="title">
-                This is Another Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+        <!-- Day 2 -->
+        <section class="day">
+            <h2>Day 2: Thursday, May 8, 2025</h2>
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Speaker/Presenter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-slot">9:00 AM - 9:30 AM</td>
+                        <td>Recap of Day 1</td>
+                        <td>Conference Chair</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">9:30 AM - 10:15 AM</td>
+                        <td>Keynote: Mating Systems in Hermaphroditic Species</td>
+                        <td>Dr. Michael Lee</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">10:15 AM - 10:30 AM</td>
+                        <td>Coffee Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">10:30 AM - 12:00 PM</td>
+                        <td>Session 4: Gamete Evolution</td>
+                        <td>Various Speakers</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">12:00 PM - 1:00 PM</td>
+                        <td>Lunch Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">1:00 PM - 2:30 PM</td>
+                        <td>Session 5: Population Genetics</td>
+                        <td>Various Speakers</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">2:30 PM - 2:45 PM</td>
+                        <td>Afternoon Break</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">2:45 PM - 4:15 PM</td>
+                        <td>Session 6: Future Directions in Research</td>
+                        <td>Various Speakers</td>
+                    </tr>
+                    <tr>
+                        <td class="time-slot">4:15 PM - 5:00 PM</td>
+                        <td>Closing Remarks</td>
+                        <td>Conference Chair</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+        &copy; 2025 SHOW Organizers
     </footer>
-
 </body>
-</html>
 
+</html>

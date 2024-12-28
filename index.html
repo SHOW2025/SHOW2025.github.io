@@ -3,22 +3,62 @@
 
 <head>
     <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/logo_trans.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/logo_trans.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Simultaneous Hermaphroditic Organisms Workshop</title>
+    <title>Simultaneous Hermaphroditic Organisms Workshop | SHOW 2025</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Example</title>
     <style>
+        /* Styling for the banner section */
+        .banner {
+            display: flex; /* Use flexbox to arrange items horizontally */
+            align-items: center; /* Align items vertically at the center */
+            justify-content: space-between; /* Distribute space between the elements */
+            width: 100%;
+            padding: 20px;
+            background-color: #F4F4F4; /* Background color of the banner */
+        }
+
+        .banner img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio of the image */
+            background-color: transparent; /* Ensure the background remains transparent */
+            object-fit: contain; /* Ensure the image fits within the area without distortion */
+            margin-top: 20px; /* Add space above the image */
+        }
+
+        /* Styling for the text content */
+        .banner-text {
+            text-align: left; /* Align text to the left */
+            padding-left: 30px; /* Add some padding between the logo and text */
+        }
+
+        .banner-text .title {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #307D7E;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .banner-text .date-place {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #8CA4A8;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
         /* Basic styling for the navigation table */
         .navigation {
             background-color: #DFE7E9; /* Light background for the navigation */
             padding: 10px;
+            width: 100%;
+            text-align: center; /* Ensures navigation links are centered */
         }
 
         .navigation a {
@@ -34,23 +74,30 @@
         .navigation a:hover {
             color: #307D7E; /* Blue color when hovered */
         }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #666;
+        }
     </style>
 </head>
 
 <body>
 
-<div class="banner">
-    <img src="assets/banner1.jpg" alt="Conference Template Banner">
-    <div class="top-left">
-        <span class="title1" style="color: #307D7E; font-family: 'Trebuchet MS', sans-serif; font-size: 40px;">Simultaneous Hermaphrodite Organisms Workshop</span> 
+    <div class="banner">
+        <!-- Logo on the left -->
+        <img src="logo_trans.png" alt="Conference Template Logo">
+
+        <!-- Text content on the right -->
+        <div class="banner-text">
+            <span class="title">Simultaneous Hermaphrodite Organisms Workshop</span>
+            <div class="date-place">
+                7-8 May, 2025 <br> University of Edinburgh, Edinburgh UK
+            </div>
+        </div>
     </div>
-    <div class="bottom-right" style="color: ##8CA4A8; font-family: 'Trebuchet MS', sans-serif; font-size: 35px;">
-        7-8 May, 2025 <br> University of Edinburgh, Edinburgh UK
-    </div>
-</div>
-
-
-
 
     <table class="navigation">
         <tr>
@@ -61,48 +108,31 @@
                 <a title="Register for the Conference" href="registration">Registration</a>
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a title="Conference Program" href="program">Program</a>
             </td>
             <td class="navigation">
                 <a title="Directions to the Conference" href="directions">Directions</a>
             </td>
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a title="Conference Flyer" href="flyer">Past SHOWs</a>
             </td>
             <td class="navigation">
-                <a title="Team page" href="team">Our Team</a>
+                <a title="Team page" href="team">The 2025 Team</a>
             </td>
         </tr>
     </table>
 
-    <h2 style="color: #307D7E; font-family: 'Trebuchet MS', sans-serif; font-size: 35px;">What is SHOW?</h2>
-    <p>
-        This website is a template that you could use for a (small) academic conference. 
-        It&rsquo;s got a page for registration, where you can embed a Google Form or some other way for participants to register.
-        It&rsquo;s got a program page to list the schedule for the conference.
-        It&rsquo;s got a directions page to add a bunch of instructions how to get to the conference.
-        It&rsquo;s got a page to put up the flyers and other promotional materials for folks to download.
-    </p>
-    <p>
-        You can use this template by cloning all the files from this
-        <a target="_blank" href="https://github.com/mikepierce/conference-website-template">GitHub repo here</a>.
-        This template was created from a website I made for 
-        <a target="_blank" href="http://math.ucr.edu/~mathconn/">MathConnections 2019</a>,
-        in case you want to see an example of this template being used in the wild.
-    </p>
-    <p>
-        This paragraph is just some filler text to give the homepage some volume:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+    <h2 style="color: #307D7E; font-family: 'Trebuchet MS', sans-serif; font-size: 35px; text-align: center;">What is SHOW?</h2>
+    <p style="text-align: center;">
+        <strong>SHOW (Studies on Hermaphrodite Organisms Workshop)</strong> is a forum for researchers studying hermaphroditism to share their findings and plan long-term collaborations. Running since 2011, the workshop initially focused on simultaneous hermaphrodites (organisms producing male and female gametes simultaneously) but now covers hermaphrodite evolution more broadly. The event spans <strong><i>two days</i></strong> and emphasizes diverse presentations from different research groups, fostering a wide range of ideas across various systems and disciplines. Its relaxed environment encourages early-career researchers to present in topics included <u>population genetics</u>, <u>gene expression</u>, <u>sexual conflict</u>, <u>mating systems</u>, <u>gamete evolution</u>, and <u>experimental evolution</u>.
     </p>
 
-    <h2 style="color: #307D7E; font-family: 'Trebuchet MS', sans-serif; font-size: 35px;">Our Sponsors</h2>
-    <p>
-        Here&rsquo;s a good place to list the organizers and sponsors of the conference,
-        as well as list contact information for the organizers,
-        and show off the logos of the sponsors.
-        It looks like his conference was sponsored by kittens!
+    <h2 style="color: #307D7E; font-family: 'Trebuchet MS', sans-serif; font-size: 35px; text-align: center;">Our Sponsors</h2>
+    <p style="text-align: center;">
+        SHOW 2025 was possible due to the kind help from our sponsors
     </p>
-    <table class="sponsors">
+
+    <table class="sponsors" style="text-align: center; margin: 0 auto;">
         <tr>
             <td class="sponsor">
                 <a href="http://www.eyebleach.me/">
@@ -123,10 +153,9 @@
     </table>
 
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+        &copy; 2025 SHOW Organizers
     </footer>
 
 </body>
-</html>
 
+</html>
