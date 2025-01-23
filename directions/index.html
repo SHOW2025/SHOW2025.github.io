@@ -34,6 +34,28 @@
         .navigation a:hover {
             color: #307D7E; /* Blue color when hovered */
         }
+
+        /* This styles the h3 title */
+        h4 {
+            color: #151787; /* Change the color to your preferred color (e.g., hex code or color name) */
+        }
+
+        .image-container {
+                display: flex; /* Aligns the images horizontally */
+                justify-content: center; /* Centers the images within the container */
+            }
+            .image-container img {
+                margin-right: 10px; /* Optional space between images */
+                
+            }
+            .image-container img:first-child {
+                object-fit: contain;
+                width: 400px;
+            }
+            .image-container img:last-child {
+                object-fit: contain;
+                width: 700px;
+            }
     </style>
 </head>
 
@@ -62,102 +84,39 @@
 
     <h2>Directions</h2>
     <p>
-        How to get to Edinburgh?
-
         The workshop will take place in the Nucleus Building on the King&rsquo;s Building campus of the University of Edinburgh. 
     </p>
 
+    <h3>How to get to Edinburgh?</h3>
+
+    <h3>How to get to the Nucleus?</h3>
+
     <iframe class="directions" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1983.893713927066!2d-3.1756576237527088!3d55.92289593097398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDU1JzIyLjQiTiAzwrAxMCcyNS44Ilc!5e1!3m2!1sen!2suk!4v1737648655900!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Images Side by Side</title>
-        <style>
-            .image-container {
-                display: flex; /* Aligns the images horizontally */
-                justify-content: center; /* Centers the images within the container */
-            }
-            .image-container img {
-                margin-right: 10px; /* Optional space between images */
-                
-            }
-            .image-container img:first-child {
-                object-fit: contain;
-                width: 400px;
-            }
-            .image-container img:last-child {
-                object-fit: contain;
-                width: 700px;
-            }
-        </style>
-    </head>
+    <h4>The Nucleus Building</h4>
 
     <div class="image-container">
         <img class="center" src="directions/nucleus_picture.jpg" alt="The Nucleus Building" id="Nucleus" >
         <img class="center" src="directions/campus_map_sign.png" alt="King's Building map" id="KB map" >
     </div>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Images Side by Side</title>
-        <style>
-            .image-container {
-                display: flex; /* Aligns the images horizontally */
-                justify-content: center; /* Centers the images within the container */
-            }
-            .image-container img {
-                margin-right: 10px; /* Optional space between images */
-                
-            }
-            .image-container img:first-child {
-                object-fit: contain;
-                width: 400px;
-            }
-            .image-container img:last-child {
-                object-fit: contain;
-                width: 600px;
-            }
-        </style>
-    </head>
+    <h4>Elm Lecture Theatre</h4>
 
     <div class="image-container">
         <img class="center" src="directions/elm_picture.jpg" alt="Elm LT picture" id="Elm photo" >
         <img class="center" src="directions/map_Elm.png" alt="Elm map" id="Elm map" >
     </div>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Images Side by Side</title>
-        <style>
-            .image-container {
-                display: flex; /* Aligns the images horizontally */
-                justify-content: center; /* Centers the images within the container */
-            }
-            .image-container img {
-                margin-right: 10px; /* Optional space between images */
-                
-            }
-            .image-container img:first-child {
-                object-fit: contain;
-                width: 400px;
-            }
-            .image-container img:last-child {
-                object-fit: contain;
-                width: 600px;
-            }
-        </style>
-    </head>
+    <h4>Rowan Studio Classroom</h4>
 
     <div class="image-container">
         <img class="center" src="directions/rowan_picture.jpeg" alt="Rowan classroom picture" id="Rowan photo" >
         <img class="center" src="directions/map_Rowan.png" alt="Rowan map" id="Rowan map" >
     </div>
 
-
-
+    <footer>
+        &copy; 2025 SHOW Organizers
+    </footer>
 
 </body>
 </html>
