@@ -16,25 +16,24 @@
     <style>
         /* Basic styling for the navigation bar */
         .navigation {
-            background-color: #DFE7E9; /* Light background for the navigation */
+            background-color: #DFE7E9;
             padding: 10px;
             display: flex;
-            justify-content: center; /* Center navigation items */
+            justify-content: center;
             align-items: center;
         }
 
         .navigation a {
             text-decoration: none;
-            color: black; /* Default color for links */
+            color: black;
             padding: 10px;
             margin: 0 10px;
             font-family: 'Trebuchet MS', sans-serif;
-            font-size: 25px !important; /* Explicitly set font size */
+            font-size: 25px !important;
         }
 
-        /* Hover effect for the links */
         .navigation a:hover {
-            color: #307D7E; /* Blue color when hovered */
+            color: #307D7E;
         }
 
         body {
@@ -54,7 +53,7 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 20px; /* Space below the navigation bar */
+            margin-top: 20px;
             text-align: center;
         }
 
@@ -66,6 +65,7 @@
         p {
             font-size: 18px;
             color: #666;
+            text-align: center;
         }
 
         .construction-icon {
@@ -79,6 +79,51 @@
             font-size: 0.9em;
             text-align: center;
             color: #666;
+        }
+
+        /* Keynote Section */
+        .keynote-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .keynote-title {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #307D7E;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50px; /* Oval shape */
+            margin-bottom: 20px;
+        }
+
+        .speakers {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .speaker {
+            text-align: center;
+        }
+
+        .speaker img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circular images */
+            object-fit: cover;
+            border: 3px solid #307D7E;
+        }
+
+        .speaker-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+            text-align: center;
         }
     </style>
 </head>
@@ -97,7 +142,27 @@
     <div class="container">
         <div class="construction-icon">🚧</div>
         <h1>Under Construction</h1>
-        <p> The programm is in progress! Please check back soon-ish for updates!</p>
+        <p>The program is in progress! Please check back soon-ish for updates!</p>
+
+<!-- Keynote Speakers Section -->
+<div class="keynote-section">
+    <div class="keynote-title">Keynote Speakers</div>
+    <div class="speakers">
+        <div class="speaker">
+            <a href="https://en.wikipedia.org/wiki/Deborah_Charlesworth" target="_blank">
+                <img src="program/DC.png" alt="Dr. Deborah Charlesworth">
+            </a>
+            <p class="speaker-name">Dr. Deborah Charlesworth</p>
+        </div>
+        <div class="speaker">
+            <a href="https://laurarossedinburgh.weebly.com/" target="_blank">
+                <img src="program/LR.jpeg" alt="Dr. Laura Ross">
+            </a>
+            <p class="speaker-name">Dr. Laura Ross</p>
+        </div>
+    </div>
+</div>
+
         <footer>
             &copy; 2025 SHOW Organizers
         </footer>
