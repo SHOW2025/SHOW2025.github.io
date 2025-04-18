@@ -9,12 +9,11 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Under Construction | SHOW 2025</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Basic styling for the navigation bar */
+        /* Navigation Styling */
         .navigation {
             background-color: #DFE7E9;
             padding: 10px;
@@ -37,41 +36,11 @@
         }
 
         body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: flex-start;
             height: 100vh;
             background-color: #f4f4f4;
             font-family: 'Trebuchet MS', sans-serif;
-        }
-
-        .container {
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: #307D7E;
-        }
-
-        p {
-            font-size: 18px;
-            color: #666;
-            text-align: center;
-        }
-
-        .construction-icon {
-            font-size: 50px;
-            margin-bottom: 20px;
-            color: #F39C12;
         }
 
         footer {
@@ -81,12 +50,24 @@
             color: #666;
         }
 
-        /* Keynote Section */
+        /* Titles Styling */
+        h1, h2, h3, h4 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #307D7E;
+            font-size: 26px;
+            text-align: center; /* Centered text */
+        }
+
+        /* Body Text Styling */
+        p {
+            font-size: 18px;
+            color: #666;
+            text-align: center;
+        }
         .keynote-section {
             margin-top: 40px;
             text-align: center;
         }
-
         .keynote-title {
             display: inline-block;
             padding: 10px 30px;
@@ -98,6 +79,12 @@
             margin-bottom: 20px;
         }
 
+        /* Image Styling */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
         .speakers {
             display: flex;
             justify-content: center;
@@ -129,6 +116,17 @@
             color: #333;
             text-align: center;
         }
+        ul li {
+            display: list-item;
+            list-style-type: disc;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 10px;
+        }
+
+
     </style>
 </head>
 
@@ -143,12 +141,12 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container">
         <h1>Programme is out!</h1>
         <p>The detailed programme is available <a href="program/SHOW2025.pdf">here</a>.
 </p>
 
 <!-- Keynote Speakers Section -->
+
 <div class="keynote-section">
     <div class="keynote-title">Keynote Speakers</div>
     <div class="speakers">
@@ -218,8 +216,10 @@
             </div>
             <div class="session">
                 <strong>3:45pm - 5pm</strong> &mdash; <strong>Discussions</strong>:
-o Plasticity and resource allocation in hermaphrodites
-o Causes and consequences of reproductive mode transition <br /><br />
+            <ul>
+                <li>Plasticity and resource allocation in hermaphrodites.</li>
+                <li>Causes and consequences of reproductive mode transition.</li>
+            </ul>
             </div>
             <div class="session">
                 <strong>5pm - 6:30pm</strong> &mdash; Poster session and apero <br /><br />
@@ -270,7 +270,7 @@ o Causes and consequences of reproductive mode transition <br /><br />
             </div>
             <div class="session">
                 <strong>4:30pm</strong> &mdash; Post-conference drinks for those not leaving Edinburgh
-immediately.
+immediately. <br /><br />
             </div>
         </div>
     </div>
@@ -313,7 +313,7 @@ immediately.
         <footer>
             &copy; 2025 SHOW Organizers
         </footer>
-    </div>
+
 </body>
 
 </html>
